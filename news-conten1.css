@@ -1,0 +1,222 @@
+*{
+	position: relative;
+	box-sizing: border-box;
+}
+/*/font/*/
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,100;0,300;0,400;0,600;1,600&display=swap');
+</style>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+</style>
+
+h1{
+  font-size: 80px;
+  font-weight: 800;
+  font-family: 'Raleway' 'Helvetica', 'roboto', arial, sans-serif;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+h2{
+  font-size: 48px;
+  font-weight: 600;
+  font-family: 'Abril Fatface', cursive; 'Helvetica', 'roboto', arial, sans-serif;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  font-weight: 800;
+}
+h3{
+  font-size: 40px;
+  font-weight: 600;
+  font-family: 'Raleway' 'Helvetica', 'roboto', arial, sans-serif;
+  line-height: 48px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+h4{
+  font-size: 24px;
+  font-weight: 600;
+  font-family: 'Raleway' 'Helvetica', 'roboto', arial, sans-serif;
+  line-height: 32px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+h5{
+  font-size: 20px;
+  font-weight: 400;
+  font-family: 'Raleway' 'Helvetica', 'roboto', arial, sans-serif;
+  line-height: 1;
+  margin-top: 24px;
+  margin-bottom: 16px;
+}
+h6{
+  font-size: 18px;
+  font-weight: 400;
+  font-family: 'Raleway' 'Helvetica', 'roboto', arial, sans-serif;
+  line-height: 32px;
+  margin-top: 24px;
+  margin-bottom: 16px;
+}
+p{
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'Raleway' 'Helvetica', 'roboto', arial, sans-serif;
+  line-height: 32px;
+  letter-spacing: 0;
+  margin-bottom: 16px;
+}
+.subtitle{
+  font-size: 48px;
+  font-weight: 900;
+  font-family: 'Raleway','Helvetica', 'roboto', arial, sans-serif;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+@media (max-width: 768px){
+  .subtitle{
+    font-size: 40px;
+  }
+}
+/* link */
+a{
+  color: #484848;
+  text-decoration: none;
+}
+a:hover,
+a:active,
+a:focus{
+  color: #484848;
+  text-decoration: none;
+}
+/* list */
+ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/*css*/
+
+html body{/*x*/
+	background-color: #E3DBD7;
+}
+
+.newsline-left{
+	width: 80%;
+	height: 2px;
+	background-color: #563F2E;
+	padding-left: 20px;
+	margin-top: 50px;
+	padding-right: 100px;
+}
+.newsline-right{
+	width: 80%;
+	height: 2px;
+	background-color: #563F2E;
+	padding-right: 20px;
+	margin-top: 50px;
+	margin-left: 20%;
+}
+.newsline-word-left{
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: translateY(-50%);
+	font-family: 'Fira Sans Condensed', sans-serif;
+	font-size: 22px;
+	font-weight: 400;
+}
+.newsline-words-right{
+	position: absolute;
+	top: 50%;
+	right: 0;
+	transform: translateY(-50%);
+	font-family: 'Fira Sans Condensed', sans-serif;
+	font-size: 22px;
+	font-weight: 400;
+}
+.sections_title{
+	text-align: center;
+}
+.sections_name{
+
+	font-family: 'Fira Sans Condensed', sans-serif;
+	font-size: 12px;
+
+	font-weight: 400;
+	text-align: center;
+}
+/*.event-pictures{
+	width: 100%;
+	height: 100%;
+	padding-top: 100%;
+	padding-left: 100%;
+	margin-top: 20px;	
+}*/
+.event-pictures{
+	width: 100%;
+	height: 100%;
+	padding-top: 100%;
+	padding-left: 100%;
+	margin-top: 20px;	
+
+	background-size: cover;
+	background-position: center;
+}
+.picture1{
+	background-image: url("../IMG_5270.JPG");
+}
+.picture2{
+	background-image: url("../IMG_5272 2.JPG");
+}
+.picture3{
+	background-image: url("../IMG_5279 2.JPG");
+}
+.picture4{
+	background-image: url("../IMG_5281 2.JPG");
+}
+.videos{
+	margin-top: 20px;	
+}
+.videos iframe{
+	width: 100%;
+	padding-top: 50px;
+}
+.photography-sections{
+	padding-top: 30px;
+	margin-bottom: 30px;
+}
+.photography{
+	width: 370px;
+	height: 285px;
+	margin-top: 10px;
+	background-position: center;
+	background-size: cover;
+}
+.photography-blocks{
+	position: relative;
+}
+.photography-words{
+	padding-top: 30%;
+	padding-bottom: 30%;
+	width: 370px;
+	height: 285px;
+	background-color: rgba(253, 244, 233, 0.5);
+	margin-top: 10px;
+	margin-bottom: 0;
+	text-align: center;
+	font-size: 24px;
+}
+.event-content{
+	padding-top: 30px;
+}
+.event-content-word{
+	padding: 80px 50px;
+}
+.video-sections-name{
+
+	padding-top: 50px;
+}
+.article:hover{
+	color: white;
+}

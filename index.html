@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Page-Enter" content="revealTrans(Duration=1.0,Transition=12)">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="reset.css">
+	<link rel="stylesheet" href="bootstrap.css">
+	<link rel="stylesheet" href="fancybox-master/dist/jquery.fancybox.min.css">
+	<link rel="stylesheet" href="news-conten1.css">
+	<title>Document</title>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="bg-overall">
+			<div class="header">
+			     <div class="container">
+				     <div class="row">
+				         <!-- start video productions -->
+				          <div class="col-sm-6 ">
+						     <div class="newsline-block-left">
+						     	<div class="newsline-left"></div>
+						     	<div class="newsline-left"></div>
+						     </div>
+						     <p class="newsline-word-left">BORN IN 1998</p>
+					     </div>
+
+					     <div class="col-sm-6">
+					     	  <div class="newsline-block-right">
+						     	<div class="newsline-right"></div>
+						     	<div class="newsline-right"></div>
+						     </div>
+						     <p class="newsline-words-right">TAIPEI</p>
+				         </div>
+				         <div class="col-sm-12">
+				         	<h2 class="sections_title">VIDEO PRODUCTION</h2>
+				         </div>
+				         <div class="sections_name col-sm-4"></div>
+				         <a href="#video1" class="sections_name col-sm-1">作品總結</a>
+				         <a href="#video2" class="sections_name col-sm-1">宣傳片製作</a>
+				         <a href="#video3" class="sections_name col-sm-1">特色短片</a>
+				         <a href="#video4" class="sections_name col-sm-1">個人紀錄</a>
+				         <div class="sections_name col-sm-4"></div>
+				         <div class="col-sm-12 video-sections-name">
+				         	<h3>作品總結</h3>
+				         </div>
+				         <div class="col-sm-12">
+				         	<div class="videos">
+				         		<iframe id="video1" width="1425" height="620" src="https://www.youtube.com/embed/1t7l2FEkw-w" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				         	</div>
+				         </div>
+				         <div id="video2" class="col-sm-12 video-sections-name">
+				         	<h3>宣傳片製作</h3>
+				         </div>
+				         <div class="col-sm-12">
+				         	<div class="videos">
+				         		<iframe width="1425" height="620" src="https://www.youtube.com/embed/z5tnQQJEC9Q" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				         		<iframe width="951" height="535" src="https://www.youtube.com/embed/ZdETmxlMjEQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				         	</div>
+				         </div>
+				         <div id="video3" class="col-sm-12 video-sections-name">
+				         	<h3>特色短片</h3>
+				         </div>
+				         <div class="col-sm-12">
+				         	<div class="videos">
+				         		<iframe width="951" height="573" src="https://www.youtube.com/embed/DP606zd_w_I" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				         		<iframe width="781" height="573" src="https://www.youtube.com/embed/5oEy44TU1Lk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				         	</div>
+				         </div>
+				          </div>
+				         <div id="video4" class="col-sm-12 video-sections-name">
+				         	<h3>個人紀錄</h3>
+				         </div>
+				         <div class="col-sm-12">
+				         	<div class="videos">
+				         		<iframe width="951" height="535" src="https://www.youtube.com/embed/dLBcO7dXW30" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				         		<iframe width="951" height="523" src="https://www.youtube.com/embed/gwZgkzzHrpI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				         	</div>
+				         </div>
+				         <!-- end video productions -->
+				         
+			         </div>
+		         </div>
+		    </div>
+
+		<!-- header -->
+		
+		<!-- section -->
+		<!-- footer -->
+	    </div>
+	</div>
+	<script src="jquery-3.5.1.js">
+		 $(document).ready(function() {
+  $('body').css('display', 'none');
+  $('body').fadeIn(1000); //一開始淡入
+  $('a.link').click(function(event) { //點選 class 為 link 的 a 元件時觸發
+   event.preventDefault(); //取消事件預設動作
+   newLocation = this.href;
+   $('body').fadeOut(1000, newpage); //點選後淡出
+  });
+  
+  function newpage() {
+   window.location = newLocation;
+  }
+ });
+	</script>
+
+	<script src="fancybox-master/dist/jquery.fancybox.min.js"></script>
+
+</body>
+</html>
